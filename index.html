@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"><strong>Please fill out this survey form.</strong></p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age (optional):</label>
+    <input type="number" id="number" name="number" placeholder="Enter your age">
+
+    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="">Select current role</option>
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <div class="checkbox-container">
+      <input type="radio" id="recommend-yes" name="recommend" value="definitely">
+      <label for="recommend-yes" class="checkbox-label">Definitely</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="radio" id="recommend-maybe" name="recommend" value="maybe">
+      <label for="recommend-maybe" class="checkbox-label">Maybe</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="radio" id="recommend-notsure" name="recommend" value="notsure">
+      <label for="recommend-notsure" class="checkbox-label">Not sure</label>
+    </div>
+
+    <label for="dropdown" id="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="">Select an option</option>
+      <option value="front-end-projects">Front-end Projects</option>
+      <option value="back-end-projects">Back-end Projects</option>
+      <option value="data-visualization">Data Visualization</option>
+      <option value="challenges">Challenges</option>
+      <option value="open-source-community">Open Source Community</option>
+      <option value="gitter-help-rooms">Gitter help rooms</option>
+      <option value="videos">Videos</option>
+      <option value="city-meetups">City Meetups</option>
+      <option value="wiki">Wiki</option>
+      <option value="forum">Forum</option>
+      <option value="additional-courses">Additional Courses</option>
+    </select>
+
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox1" name="checkbox" value="front-end-projects">
+      <label for="checkbox1" class="checkbox-label">Front-end Projects</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox2" name="checkbox" value="back-end-projects">
+      <label for="checkbox2" class="checkbox-label">Back-end Projects</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox3" name="checkbox" value="data-visualization">
+      <label for="checkbox3" class="checkbox-label">Data Visualization</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox4" name="checkbox" value="challenges">
+      <label for="checkbox4" class="checkbox-label">Challenges</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox5" name="checkbox" value="open-source-community">
+      <label for="checkbox5" class="checkbox-label">Open Source Community</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox6" name="checkbox" value="gitter-help-rooms">
+      <label for="checkbox6" class="checkbox-label">Gitter help rooms</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox7" name="checkbox" value="videos">
+      <label for="checkbox7" class="checkbox-label">Videos</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox8" name="checkbox" value="city-meetups">
+      <label for="checkbox8" class="checkbox-label">City Meetups</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox9" name="checkbox" value="wiki">
+      <label for="checkbox9" class="checkbox-label">Wiki</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox10" name="checkbox" value="forum">
+      <label for="checkbox10" class="checkbox-label">Forum</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox11" name="checkbox" value="additional-courses">
+      <label for="checkbox11" class="checkbox-label">Additional Courses</label>
+    </div>
+
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+    <div class="submit-container">
+      <input type="submit" id="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
